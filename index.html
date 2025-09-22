@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie’s Bakery & Café - Homepage</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F8F5F2;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8B4513;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #D4A574 !important;
+        }
+        .navbar {
+            background-color: #FFF8E7;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-nav .nav-link {
+            color: #8B4513;
+        }
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: #D4A574;
+        }
+        .banner {
+            background: url('https://source.unsplash.com/1600x600/?bakery,cafe') no-repeat center/cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        }
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .banner p {
+            font-size: 1.25rem;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #D4A574;
+            margin-bottom: 1rem;
+        }
+        .intro {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #D4A574;
+            border-color: #D4A574;
+        }
+        .btn-primary:hover {
+            background-color: #B8860B;
+            border-color: #B8860B;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo">🍰 Sophie’s Bakery & Café</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Welcome to Sophie’s Bakery & Café</h1>
+        <p>Indulge in fresh, handmade delights every day.</p>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2>Our Story</h2>
+                <p>
+                    At Sophie’s Bakery & Café, we bake with love using only the finest ingredients. 
+                    From crusty artisan breads to decadent cakes and flaky pastries, 
+                    our passion is creating moments of joy with every bite. 
+                    Visit us for a cozy café experience in the heart of town!
+                </p>
+                <a href="products.html" class="btn btn-primary btn-lg">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
